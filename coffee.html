@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="download.jfif" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Helvetica, sans-serif;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+        }
+
+        .box {
+            position: sticky;
+            top: 0px;
+            background-color: white;
+            z-index: 1;
+            
+        }
+
+        .navbar {
+            display: flex;
+            height: 65px;
+           
+
+        }
+
+        .navbar h1 {
+            /* position: relative; */
+            width: 30%;
+            margin-left: 40px;
+            margin-top: 20px;
+            font-size: 26px;
+            /* font-weight: bolder; */
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            word-spacing: 10px;
+            /* background-color: blue; */
+            width: 30%;
+        }
+
+        .navbar ul {
+            display: flex;
+            justify-content: flex-end;
+            font-size: 20px;
+            font-family: Helvetica, sans-serif;
+            /* background-color: yellowgreen; */
+
+        }
+
+        .navbar ul li {
+            padding-left: 47px;
+            margin-top: 26px;
+           
+            list-style: none;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+        }
+        .navbar ul li:hover {
+            color: grey;
+            cursor: pointer;
+        }
+
+        .secsection {
+            height: 100vh;
+            width: 100%;
+            margin-top: 30px;
+            background-image: url(header-bg-1-2.jpg);
+            background-attachment: fixed;
+            background-color: rgba(0, 0, 0, 0.3);
+            background-position: center center;
+            background-size: cover;
+            text-align: center;
+            padding-top: 150px;
+        }
+
+        .secsection h1 {
+            font-size: 110px;
+            color: white;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            letter-spacing: 10px;
+            z-index: 1;
+        }
+
+        .secsection p {
+            font-size: 40px;
+            color: white;
+            line-height: 100px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .secbtn {
+            height: 50px;
+            width: 150px;
+            margin-top: 10px;
+            border-radius: 8px;
+            font-size: 30px;
+            background-color: coral;
+            border-color: coral;
+            color: white;
+
+        }
+
+        .secbtn:hover {
+            background: coral;
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgb(233, 75, 17),
+                0 0 25px  rgb(233, 75, 17),
+                0 0 50px  rgb(233, 75, 17),
+                0 0 100px rgb(233, 75, 17);
+        }
+
+        .third {
+            background-image: url(coffee-item-10.jpg);
+            height: 100%vh;
+            width: 100%;
+            background-position: center center;
+            background-size: cover;
+            text-align: center;
+            padding-top: 150px;
+            background-color: rgba(0, 0, 0, 0.1);
+            padding-bottom: 150px;
+            /* position: fixed; */
+
+        }
+
+
+        .third .h1 {
+            font-size: 40px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            word-spacing: 10px;
+            padding-top: 20px;
+            color: coral;
+        }
+
+        .third .p {
+            padding-top: 30px;
+            font-size: 20px;
+            line-height: 50px;
+            color: rgb(241, 173, 128)
+        }
+
+        .thirdimg {
+            padding-top: 80px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .thirdimg img:hover {
+            transform: rotate(360deg) ;
+            transition: 1s ;
+            
+        }
+
+        .thirdimg h1 {
+            color: black;
+            line-height: 70px;
+            color: coral;
+        }
+
+        .thirdimg p {
+            line-height: 30px;
+            font-size: 20px;
+            color: rgb(133, 83, 45);
+        }
+
+        .imgbtn {
+            margin-top: 80px;
+            height: 50px;
+            width: 200px;
+            border-radius: 8px;
+            border-color: coral;
+            font-size: 25px;
+            background-color: coral;
+            color: white;
+
+        }
+
+        .imgbtn:hover {
+            background-color: chocolate;
+            color: white;
+            box-shadow: 0 0 5px rgb(233, 75, 17),
+                0 0 25px  rgb(233, 75, 17),
+                0 0 50px  rgb(233, 75, 17),
+                0 0 100px rgb(233, 75, 17);
+
+        }
+
+        .fourth {
+            text-align: center;
+            height: 100%vh;
+            width: 100%;
+            background-color: coral;
+            color: white;
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+
+        .fourth h1 {
+            font-size: 50px;
+        }
+
+        .fourth p {
+            padding-top: 15px;
+            font-size: 20px;
+            line-height: 40px;
+        }
+
+        .video video {
+            width: 100%;
+            border: 2px rgb(188, 86, 17) solid;
+        }
+
+        .fifth {
+            display: flex;
+
+        }
+
+        .fifth1 {
+            width: 100%;
+            height: 600px;
+            text-align: center;
+            /* background-color: yellow; */
+        }
+
+        .fifth h1 {
+            line-height: 100px;
+            padding-top: 50px;
+            font-size: 50px;
+            color: rgb(83, 63, 63);
+        }
+
+        .fifth p {
+            line-height: 35px;
+            font-size: 20px;
+            color: rgb(208, 139, 139);
+        }
+
+        .learnmore {
+            margin-top: 70px;
+            height: 50px;
+            width: 200px;
+            border-radius: 8px;
+            border-color: coral;
+            font-size: 25px;
+            background-color: coral;
+            color: white;
+
+        }
+
+        .learnmore:hover {
+            background-color: chocolate;
+            color: white;
+            box-shadow: 0 0 5px rgb(233, 75, 17),
+                0 0 25px  rgb(233, 75, 17),
+                0 0 50px  rgb(233, 75, 17),
+                0 0 100px rgb(233, 75, 17);
+
+        }
+
+        .fifth2 {
+            width: 100%;
+            /* background-color: yellowgreen; */
+            background-image: url(gallery-coffee-image-5.jpg);
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .fifth2 img {
+            width: 100%;
+            height: 600px;
+        }
+
+        .six {
+            background-image: url(section-bg-10.jpg);
+            width: 100%;
+            height: 700px;
+            background-position: center center;
+            background-size: cover;
+            text-align: left;
+        }
+
+        .six h1 {
+            padding-top: 180px;
+            padding-left: 600px;
+            font-size: 50px;
+            color: rgb(83, 63, 63);
+        }
+
+        .six p {
+            padding-left: 600px;
+            padding-top: 25px;
+            line-height: 35px;
+            font-size: 25px;
+            color: rgb(208, 139, 139);
+        }
+
+        .sixbtn {
+            margin-top: 40px;
+            height: 50px;
+            margin-left: 600px;
+            width: 200px;
+            border-radius: 10px;
+            border-color: coral;
+            font-size: 25px;
+            background-color: coral;
+            color: white;
+        }
+
+        .sixbtn:hover {
+            background-color: chocolate;
+            color: white;
+            box-shadow: 0 0 5px rgb(233, 75, 17),
+                0 0 25px  rgb(233, 75, 17),
+                0 0 50px  rgb(233, 75, 17),
+                0 0 100px rgb(233, 75, 17);
+        }
+
+        .sectionbg3 {
+            /* background-image: url(section-bg-3.jpg); */
+            height: 600px;
+            width: 100%;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .seven {
+            background-image: url(section-bg-3.jpg);
+            height: 700px;
+            width: 100%;
+            background-position: center center;
+            background-size: cover;
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+        }
+
+        .seven h1 {
+            font-size: 50px;
+            color: white;
+            padding-top: 120px;
+            padding-left: 150px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+        }
+
+        .seven ul {
+            display: flex;
+            font-size: 20px;
+            color: rgb(239, 169, 143);
+            margin-left: 30px;
+            margin-top: 60px;
+
+        }
+
+        .seven ul li {
+            list-style: none;
+            padding-left: 108px;
+            display: block;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+        }
+
+        .seven ul li i {
+            text-align: center;
+            font-size: 40px;
+            display: block;
+            padding-bottom: 30px;
+        }
+        .seven p{
+            color: white;
+            font-size: 20px;
+            line-height: 35px;
+            padding-top: 50px;
+            padding-left: 150px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+        }
+
+        .sevenbtn {
+            margin-top: 50px;
+            height: 50px;
+            margin-left: 350px;
+            width: 200px;
+            border-radius: 10px;
+            border-color: coral;
+            font-size: 25px;
+            background-color: coral;
+            color: white;
+        }
+
+        .sevenbtn:hover {
+            background-color: chocolate;
+            color: white;
+            box-shadow: 0 0 5px rgb(233, 75, 17),
+                0 0 25px  rgb(233, 75, 17),
+                0 0 50px  rgb(233, 75, 17),
+                0 0 100px rgb(233, 75, 17);
+        }
+
+
+        
+            
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <nav class="navbar">
+                <h1>
+                    Coffee Shop Landing Page
+                </h1>
+                <ul>
+                    <li><a href="Landing">Landing</a></li>
+                    <li><a href="Home">Home</a></li>
+                    <li><a href="Menu">Menu</a></li>
+                    <li><a href="Guide">Guide</a></li>
+                    <li><a href="Shop">Shop</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="Contact">Contact</a></li>
+                    <li><a href="shopping"><i class="fa-solid fa-cart-shopping fa-beat"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="secsection">
+            <h1>COFFEE HOUSE</h1>
+            <div>
+                <p>Serving Only the Best since 2013</p>
+            </div>
+            <div>
+                <button class="secbtn">Shop</button>
+            </div>
+        </div>
+        <div class="third">
+            <h1 class="h1"> WE BELIEVE IN COFFEE THAT TASTES </h1>
+            <h1 class="h1">INCREDIBLE</h1>
+            <p class="p">Sed ut perspiciatis unde omnis iste natus error sit voluptatem <br> accusantium doloremque
+                laudantium,
+                totam rem aperiam, eaque ipsa <br> quae ab illo.</p>
+            <div class="thirdimg shopping">
+                <div>
+                    <img src="coffee-item-1.png" alt="">
+                    <h1>MOCHA LATTE</h1>
+                    <p>Sed ut perspiciatis unde omnis <br> iste natus error sit voluptatem <br> accusantium doloremque
+                        <br> laudantium.
+                    </p>
+                </div>
+                <div><img src="coffee-item-2.png" alt="">
+                    <h1>POUR OVER</h1>
+                    <p>Sed ut perspiciatis unde omnis <br> iste natus error sit voluptatem <br> accusantium doloremque
+                        <br> laudantium.
+                    </p>
+                </div>
+                <div>
+                    <img src="coffee-item-3.png" alt="">
+                    <h1>ESPRESSO</h1>
+                    <p>Sed ut perspiciatis unde omnis <br> iste natus error sit voluptatem <br> accusantium doloremque
+                        <br> laudantium.
+                    </p>
+                </div>
+            </div>
+            <button class="imgbtn">FULL MENU</button>
+        </div>
+
+        <div class="fourth">
+            <h1>OUR STORY</h1>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem <br> accusantium doloremque laudantium,
+                totam rem aperiam.</p>
+        </div>
+        <div class="video">
+            <video controls autoplay loop>
+                <source src="pexels-mixkit-free-video-assets-2675509-1920x1080-24fps.mp4">
+            </video>
+        </div>
+        <div class="fifth">
+            <div class="fifth1">
+                <h1>FRESH BEANS</h1>
+                <p>Sed ut perspiciatis unde omnis iste <br> natus error sit voluptatem accusantium doloremque
+                    laudantium, <br> totam rem aperiam, eaque ipsa quae ab illo inventore <br> veritatis et quasi
+                    architecto beatae vitae dicta sunt <br> explicabo.</p>
+                <button class="learnmore">LEARN MORE</button>
+            </div>
+            <div class="fifth2">
+            </div>
+        </div>
+
+        <div class="six" id="blog">
+            <h1>GREAT COFFEE</h1>
+            <p>Sed ut perspiciatis unde omnis iste<br> natus error sit voluptatem accusantium doloremque laudantium,
+                <br> totam rem aperiam, eaque ipsa quae ab illo inventore <br> veritatis et quasi architecto beatae
+                vitae dicta sunt <br> explicabo.
+            </p>
+            <button class="sixbtn">FULL MENU</button>
+        </div>
+        <div class="seven" id="About">
+            <h1>THE BEST COFFEE SHOP</h1>
+            <ul>
+                <li>
+                    <i class="fa-brands fa-youtube"></i>
+                    BEST BEANS
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-truck-fast"></i>
+                    QUALITY MILK
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-gift"></i>
+                    PERFECT BLEND
+                </li>
+            </ul>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem <br> accusantium doloremque laudantium, totam rem aperiam, eaque ipsa <br> quae ab illo inventore veritatis et quasi architecto beatae vitae.</p>
+            <button class="sevenbtn">About US</button>
+        </div>
+    </div>
+</body>
+
+</html>
